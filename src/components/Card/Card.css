@@ -116,6 +116,7 @@
 		width: 5vw;
 		height: 5vw;
 	}
+}
 
 @media (max-width: 700px) {
 	.card__custom {
