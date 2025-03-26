@@ -29,8 +29,12 @@
 }
 
 .header__options {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .header__options:hover>.header__options--container, .header__options.active > .header__options--container {
@@ -76,6 +80,8 @@
 
 .header__options:hover > .header__options--container--lvl1, .header__options.active > .header__options--container--lvl1, .header__options.active > .header__options--container--container, .header__options:hover > .header__options--container--container {
 	opacity:1;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	bottom: -400px;
 	width: 320px;
@@ -94,16 +100,18 @@
 	width: 960px;
 	height: 400px;
 	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
   -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
   transform: rotate(0deg);
 	top: 96px;
 }
 
 .header__options--item:hover>.header__options--container--lvl3, .header__options--item.active >.header__options--container--lvl3 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .header__options--container--lvls.header__options--container--lvl4 {
@@ -115,6 +123,8 @@
 }
 
 .header__options--item:hover > .header__options--container--lvls.header__options--container--lvl4, .header__options--item.active > .header__options--container--lvls.header__options--container--lvl4 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: fixed;
 	top:0;
@@ -143,6 +153,8 @@
 	height: 100%;
 }
 .header__options > .header__options--container--lvl3 {
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
 	transition: opacity 0.5s;
 }
 
@@ -172,8 +184,13 @@
 }
 
 .header__options--container--lvls {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	/* flex-basis: 34%; */
 	width: 320px;
 }
@@ -197,6 +214,8 @@
 	margin-right: auto;
 	width: 80%;
 	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-left: 3%;
 }
@@ -251,17 +270,22 @@
 	top: 55px;
 }
 	.header__nav--menu {
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 		width: 100%;
 	}
 	.header__options--first.active > .header__options--container {
 		width: 25%;
 	}
 	.header__options--firstlvl {
-		flex-grow: 1;
+		-webkit-box-flex: 1;
+		    -ms-flex-positive: 1;
+		        flex-grow: 1;
 	}
 	.header__fale--conosco {
-		flex-grow: 1;
+		-webkit-box-flex: 1;
+		    -ms-flex-positive: 1;
+		        flex-grow: 1;
 	}
 	.header__options:hover > .header__options--container--lvl1, .header__options.active > .header__options--container--lvl1 {
 		bottom: -412px;
@@ -296,7 +320,10 @@
 
 @media (max-width: 880px) {
 	.header__options {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	.header__options.active > .header__options--container--container {
 		width: 100%;
@@ -322,7 +349,8 @@
 		position: unset;
 	}
 	 .header__options--container--lvls {
-		flex-basis: unset;
+		-ms-flex-preferred-size: unset;
+		    flex-basis: unset;
 		width: 100%;
 		height: 100%;
 	}
@@ -357,11 +385,15 @@
 }
 
 .header__options--firstlvl {
-	flex-grow: 3;
+	-webkit-box-flex: 3;
+	    -ms-flex-positive: 3;
+	        flex-grow: 3;
 }
 
 .header__fale--conosco {
-	flex-grow: 25;
+	-webkit-box-flex: 25;
+	    -ms-flex-positive: 25;
+	        flex-grow: 25;
 	margin-left: 5%;
 	/* margin-top: auto; */
 }
@@ -380,6 +412,8 @@
 	/* 	margin-bottom: 0; */
 	/* } */
 .header__options--container--lvl1{
+	-webkit-transition: height 1s;
+	-o-transition: height 1s;
 	transition: height 1s;
 } 
 .header__options.active > .header__options--container--lvl1 {
@@ -407,6 +441,8 @@
 	position: absolute;
 	right:5%;
 	top: 25%;
+	-webkit-transition: rotate 0.3s;
+	-o-transition: rotate 0.3s;
 	transition: rotate 0.3s;
 }
 .header__options.active > button::after {
@@ -424,6 +460,8 @@
 	height: 100%;
 }
 .header__options--item.active > .header__options--container--lvls.header__options--container--lvl4 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: unset;
 	width: 100%;

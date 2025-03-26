@@ -1,7 +1,6 @@
 import { useSearchParams } from 'react-router';
 import './Header.css'
 import HeaderOptions from './HeaderOptions';
-import NewHeaderOptions from './NewHeaderOptions';
 import { useState } from 'react';
 import optionsData from '../../data/types.json'
 import { Link } from 'react-router';
