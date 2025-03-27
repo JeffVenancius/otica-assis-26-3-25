@@ -119,7 +119,7 @@
 }
 
 .header__options--container--lvl1, .header__options--container--lvl2, .header__options--container--lvl3, .header__options--container--lvl4 {
-	margin-top: 31px;
+	margin-top: 32px;
 }
 
 .header__options--item:hover > .header__options--container--lvls.header__options--container--lvl4, .header__options--item.active > .header__options--container--lvls.header__options--container--lvl4 {
@@ -128,7 +128,7 @@
 	display: flex;
 	position: fixed;
 	top:0;
-	right: 24px;
+	right: 32px;
 	width: 320px;
 	height: 369px;
 	background-color: white;
@@ -197,6 +197,7 @@
 
 .header__options--item {
 	max-height: 56px;
+	width: 100%;
 }
 
 .header__options--container--lvl1 {
