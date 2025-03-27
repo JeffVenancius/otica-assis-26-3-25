@@ -86,6 +86,7 @@
 	bottom: -400px;
 	width: 320px;
 	height: 400px;
+	z-index: 5;
 }
 
 .header__options.active > .header__options--container--container, .header__options:hover > .header__options--container--container {
