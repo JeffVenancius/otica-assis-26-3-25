@@ -4,7 +4,7 @@
 	display: none;
 	width: 20%;
 	height: 0;
-	overflow-y: scroll;
+	overflow-y: auto;
 	position: absolute;
 	top: 128px;
 	margin-left: 5px;
@@ -128,11 +128,11 @@
 	display: flex;
 	position: fixed;
 	top:0;
-	right: 32px;
+	right: 40px;
 	width: 320px;
 	height: 369px;
 	background-color: white;
-	overflow-y: scroll;
+	overflow-y: auto;
 	z-index: 1002;
 }
 
@@ -162,7 +162,7 @@
 	opacity: 1;
 	width: 320px;
 	height: 369px;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 .header__options a {
@@ -202,7 +202,7 @@
 
 .header__options--container--lvl1 {
 	background-color: #fff;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 .header__options > .header__options--container--lvls {
